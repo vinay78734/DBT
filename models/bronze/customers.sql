@@ -5,6 +5,6 @@
 }}
 
 with cte as (
-    select * from raw.globalmart.customers
+    select * from {{ source('globalmart', 'customers') }}
 )
 select * from cte
