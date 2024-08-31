@@ -47,3 +47,6 @@ models:
     gold :
       +schema : gold
       +materialized : table  
+
+vars:
+  start_date : 31-08-2024

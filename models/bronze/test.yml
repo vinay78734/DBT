@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: products
+    description: "Description of the bronze model"
+    columns:
+      - name: CATEGORY
+        description: "Category of the product"
+      - name: PRODUCTID
+        description: "Unique product identifier"
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - CATEGORY
+            - PRODUCTID
