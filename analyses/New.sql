@@ -1,0 +1,1 @@
+select funtest(10,90,10) as value
